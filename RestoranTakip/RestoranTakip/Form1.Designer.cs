@@ -77,6 +77,7 @@
             btnGiris.TabIndex = 2;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = true;
+            btnGiris.Click += btnGiris_Click;
             // 
             // linkKayit
             // 
@@ -87,6 +88,7 @@
             linkKayit.TabIndex = 3;
             linkKayit.TabStop = true;
             linkKayit.Text = "Üye Ol";
+            linkKayit.LinkClicked += linkKayit_LinkClicked;
             // 
             // Form1
             // 
