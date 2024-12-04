@@ -28,32 +28,121 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgvSiparisler = new DataGridView();
+            SiparisID = new DataGridViewTextBoxColumn();
+            MusteriAdi = new DataGridViewTextBoxColumn();
+            Telefon = new DataGridViewTextBoxColumn();
+            Adres = new DataGridViewTextBoxColumn();
+            Urunler = new DataGridViewTextBoxColumn();
+            ToplamFiyat = new DataGridViewTextBoxColumn();
+            Durum = new DataGridViewTextBoxColumn();
+            btnHazirlaniyor = new Button();
+            btnYolda = new Button();
+            btnTeslimEdildi = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvSiparisler).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvSiparisler
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(52, 30);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 150);
-            dataGridView1.TabIndex = 0;
+            dgvSiparisler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSiparisler.Columns.AddRange(new DataGridViewColumn[] { SiparisID, MusteriAdi, Telefon, Adres, Urunler, ToplamFiyat, Durum });
+            dgvSiparisler.Location = new Point(12, 34);
+            dgvSiparisler.Name = "dgvSiparisler";
+            dgvSiparisler.Size = new Size(776, 150);
+            dgvSiparisler.TabIndex = 0;
+            // 
+            // SiparisID
+            // 
+            SiparisID.HeaderText = "SiparisID";
+            SiparisID.Name = "SiparisID";
+            // 
+            // MusteriAdi
+            // 
+            MusteriAdi.HeaderText = "Müşteri Adı";
+            MusteriAdi.Name = "MusteriAdi";
+            // 
+            // Telefon
+            // 
+            Telefon.HeaderText = "Telefon";
+            Telefon.Name = "Telefon";
+            // 
+            // Adres
+            // 
+            Adres.HeaderText = "Adres";
+            Adres.Name = "Adres";
+            // 
+            // Urunler
+            // 
+            Urunler.HeaderText = "Ürünler";
+            Urunler.Name = "Urunler";
+            // 
+            // ToplamFiyat
+            // 
+            ToplamFiyat.HeaderText = "Toplam Fiyat";
+            ToplamFiyat.Name = "ToplamFiyat";
+            // 
+            // Durum
+            // 
+            Durum.HeaderText = "Durum";
+            Durum.Name = "Durum";
+            // 
+            // btnHazirlaniyor
+            // 
+            btnHazirlaniyor.Location = new Point(42, 225);
+            btnHazirlaniyor.Name = "btnHazirlaniyor";
+            btnHazirlaniyor.Size = new Size(99, 23);
+            btnHazirlaniyor.TabIndex = 1;
+            btnHazirlaniyor.Text = "Hazırlanıyor";
+            btnHazirlaniyor.UseVisualStyleBackColor = true;
+            btnHazirlaniyor.Click += btnHazirlaniyor_Click;
+            // 
+            // btnYolda
+            // 
+            btnYolda.Location = new Point(191, 225);
+            btnYolda.Name = "btnYolda";
+            btnYolda.Size = new Size(99, 23);
+            btnYolda.TabIndex = 1;
+            btnYolda.Text = "Yolda";
+            btnYolda.UseVisualStyleBackColor = true;
+            btnYolda.Click += btnYolda_Click;
+            // 
+            // btnTeslimEdildi
+            // 
+            btnTeslimEdildi.Location = new Point(329, 225);
+            btnTeslimEdildi.Name = "btnTeslimEdildi";
+            btnTeslimEdildi.Size = new Size(99, 23);
+            btnTeslimEdildi.TabIndex = 1;
+            btnTeslimEdildi.Text = "Teslim Edildi";
+            btnTeslimEdildi.UseVisualStyleBackColor = true;
+            btnTeslimEdildi.Click += btnTeslimEdildi_Click;
             // 
             // CalisanFormu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(btnTeslimEdildi);
+            Controls.Add(btnYolda);
+            Controls.Add(btnHazirlaniyor);
+            Controls.Add(dgvSiparisler);
             Name = "CalisanFormu";
             Text = "CalisanFormu";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvSiparisler).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvSiparisler;
+        private DataGridViewTextBoxColumn SiparisID;
+        private DataGridViewTextBoxColumn MusteriAdi;
+        private DataGridViewTextBoxColumn Telefon;
+        private DataGridViewTextBoxColumn Adres;
+        private DataGridViewTextBoxColumn Urunler;
+        private DataGridViewTextBoxColumn ToplamFiyat;
+        private DataGridViewTextBoxColumn Durum;
+        private Button btnHazirlaniyor;
+        private Button btnYolda;
+        private Button btnTeslimEdildi;
     }
 }

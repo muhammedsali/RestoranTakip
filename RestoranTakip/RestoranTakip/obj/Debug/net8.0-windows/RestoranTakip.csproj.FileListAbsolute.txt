@@ -53,3 +53,5 @@ C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bi
 C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\Restoran.FFF4EF94.Up2Date
 C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.MusteriFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.YoneticiFormu.resources

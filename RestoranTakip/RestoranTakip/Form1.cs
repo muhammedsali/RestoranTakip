@@ -18,6 +18,18 @@ namespace RestoranTakip
             string kullaniciAdi = txtKullaniciAdi.Text.Trim();
             string sifre = txtSifre.Text.Trim();
 
+            if (string.IsNullOrEmpty(kullaniciAdi))
+            {
+                MessageBox.Show("Kullanýcý adý boþ býrakýlamaz.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(sifre))
+            {
+                MessageBox.Show("Þifre boþ býrakýlamaz.");
+                return;
+            }
+
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -33,7 +45,26 @@ namespace RestoranTakip
                         {
                             if (reader.HasRows)
                             {
+                                reader.Read();
+                                string rol = reader["Rol"].ToString();
                                 MessageBox.Show("Giriþ baþarýlý!");
+
+                                if (rol == "Müþteri")
+                                {
+                                    MusteriFormu musteriFormu = new MusteriFormu();
+                                    musteriFormu.Show();
+                                }
+                                else if (rol == "Çalýþan")
+                                {
+                                    CalisanFormu calisanFormu = new CalisanFormu();
+                                    calisanFormu.Show();
+                                }
+                                else if (rol == "Yönetici")
+                                {
+                                    YoneticiFormu yoneticiFormu = new YoneticiFormu();
+                                    yoneticiFormu.Show();
+                                }
+                                this.Hide();
                             }
                             else
                             {
@@ -51,9 +82,8 @@ namespace RestoranTakip
 
         private void linkKayit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 kayitFormu = new Form2();  
+            Form2 kayitFormu = new Form2();
             kayitFormu.Show();
-            
         }
     }
 }
