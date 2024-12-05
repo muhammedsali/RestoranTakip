@@ -28,7 +28,7 @@ namespace RestoranTakip
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT CalisanID, Ad, Soyad, Eposta, Telefon FROM Calisanlar";
+                string query = "SELECT KullaniciID, Ad, Soyad, Eposta, Telefon FROM Kullanicilar";
                 SqlDataAdapter da = new SqlDataAdapter(query, connection);
                 DataTable dt = new DataTable();
                 da.Fill(dt);

@@ -42,7 +42,7 @@ namespace RestoranTakip
             // Veritabanı bağlantısı
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                SqlCommand command = new SqlCommand("INSERT INTO Kullanıcılar (Ad, Soyad, Eposta, Şifre, Telefon, Adres, Rol) VALUES (@Ad, @Soyad, @Eposta, @Şifre, @Telefon, @Adres, @Rol)", connection);
+                SqlCommand command = new SqlCommand("INSERT INTO Kullanicilar (Ad, Soyad, Eposta, Sifre, Telefon, Adres, Rol) VALUES (@Ad, @Soyad, @Eposta, @Şifre, @Telefon, @Adres, @Rol)", connection);
                 command.Parameters.AddWithValue("@Ad", ad);
                 command.Parameters.AddWithValue("@Soyad", soyad);
                 command.Parameters.AddWithValue("@Eposta", eposta);

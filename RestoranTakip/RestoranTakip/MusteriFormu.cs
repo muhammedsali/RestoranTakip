@@ -14,6 +14,10 @@ namespace RestoranTakip
     public partial class MusteriFormu : Form
     {
         private string connectionString = "Data Source=DESKTOP-4U1EH3V\\SQLEXPRESS;Initial Catalog=RestoranDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+
+
+
+
         private DataTable sepetTablosu;
 
         public MusteriFormu()
@@ -27,7 +31,7 @@ namespace RestoranTakip
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT ÜrünID, ÜrünAdi, Kategori, Fiyat, Aciklama FROM Urunler";
+                string query = "SELECT UrunID, UrunAdi, Kategori, Fiyat, Aciklama FROM Urunler";
                 SqlDataAdapter da = new SqlDataAdapter(query, connection);
                 DataTable dt = new DataTable();
                 da.Fill(dt);

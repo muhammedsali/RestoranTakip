@@ -3,48 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\restorantakip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\yoneticiformu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\yoneticiformu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\yoneticiformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\yoneticiformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\yoneticiformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\yoneticiformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\calisanformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\calisanformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\calisanformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\calisanformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\restorantakip\\musteriformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\musteriformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\yoneticiformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\yoneticiformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_4U1EH3V_SQLEXPRESS/RestoranDB/True/SqlTable/dbo.Kullanicilar.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\musteriformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\musteriformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\restorantakip\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_4U1EH3V_SQLEXPRESS/RestoranDB/True/SqlTable/dbo.\u00DCr\u00FCnler.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|c:\\users\\muham\\projeler\\c# projeler\\restorantakip\\restorantakip\\restorantakip\\calisanformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BAB69A-4F9E-4E05-B34A-52881C408895}|RestoranTakip\\RestoranTakip.csproj|solutionrelative:restorantakip\\calisanformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,17 +48,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form1.cs",
               "RelativeDocumentMoniker": "RestoranTakip\\Form1.cs",
-              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form1.cs*",
-              "RelativeToolTip": "RestoranTakip\\Form1.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form1.cs",
+              "RelativeToolTip": "RestoranTakip\\Form1.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwDQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T16:03:58.361Z",
               "IsPinned": true,
@@ -72,26 +66,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form1.cs",
-              "RelativeDocumentMoniker": "RestoranTakip\\Form1.cs",
-              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form1.cs [Design]*",
-              "RelativeToolTip": "RestoranTakip\\Form1.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T15:47:52.761Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form2.cs",
               "RelativeDocumentMoniker": "RestoranTakip\\Form2.cs",
               "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form2.cs",
               "RelativeToolTip": "RestoranTakip\\Form2.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACcAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAArwDEAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T17:58:56.966Z",
               "IsPinned": true,
@@ -99,26 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form2.cs",
-              "RelativeDocumentMoniker": "RestoranTakip\\Form2.cs",
-              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Form2.cs [Design]",
-              "RelativeToolTip": "RestoranTakip\\Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:42:42.101Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "MusteriFormu.cs",
               "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\MusteriFormu.cs",
               "RelativeDocumentMoniker": "RestoranTakip\\MusteriFormu.cs",
               "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\MusteriFormu.cs",
               "RelativeToolTip": "RestoranTakip\\MusteriFormu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T18:46:57.844Z",
               "IsPinned": true,
@@ -126,26 +94,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MusteriFormu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\MusteriFormu.cs",
-              "RelativeDocumentMoniker": "RestoranTakip\\MusteriFormu.cs",
-              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\MusteriFormu.cs [Design]",
-              "RelativeToolTip": "RestoranTakip\\MusteriFormu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:33:56.929Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CalisanFormu.cs",
               "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\CalisanFormu.cs",
               "RelativeDocumentMoniker": "RestoranTakip\\CalisanFormu.cs",
               "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\CalisanFormu.cs",
               "RelativeToolTip": "RestoranTakip\\CalisanFormu.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAEwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAnwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T14:52:44.131Z",
               "IsPinned": true,
@@ -153,26 +108,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CalisanFormu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\CalisanFormu.cs",
-              "RelativeDocumentMoniker": "RestoranTakip\\CalisanFormu.cs",
-              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\CalisanFormu.cs [Design]",
-              "RelativeToolTip": "RestoranTakip\\CalisanFormu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:53:25.992Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "YoneticiFormu.cs",
               "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\YoneticiFormu.cs",
               "RelativeDocumentMoniker": "RestoranTakip\\YoneticiFormu.cs",
               "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\YoneticiFormu.cs",
               "RelativeToolTip": "RestoranTakip\\YoneticiFormu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANQAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAArwB8AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T15:02:03.925Z",
               "IsPinned": true,
@@ -180,29 +122,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "YoneticiFormu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\YoneticiFormu.cs",
-              "RelativeDocumentMoniker": "RestoranTakip\\YoneticiFormu.cs",
-              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\YoneticiFormu.cs [Design]",
-              "RelativeToolTip": "RestoranTakip\\YoneticiFormu.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "MusteriFormu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\MusteriFormu.cs",
+              "RelativeDocumentMoniker": "RestoranTakip\\MusteriFormu.cs",
+              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\MusteriFormu.cs [Design]",
+              "RelativeToolTip": "RestoranTakip\\MusteriFormu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:01:56.66Z",
+              "WhenOpened": "2024-12-04T17:51:17.274Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "YoneticiFormu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\YoneticiFormu.Designer.cs",
-              "RelativeDocumentMoniker": "RestoranTakip\\YoneticiFormu.Designer.cs",
-              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\YoneticiFormu.Designer.cs",
-              "RelativeToolTip": "RestoranTakip\\YoneticiFormu.Designer.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAlwDwAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CalisanFormu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\CalisanFormu.cs",
+              "RelativeDocumentMoniker": "RestoranTakip\\CalisanFormu.cs",
+              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\CalisanFormu.cs [Design]",
+              "RelativeToolTip": "RestoranTakip\\CalisanFormu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:15:23.267Z",
+              "WhenOpened": "2024-12-05T14:55:13.202Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Program.cs",
+              "RelativeDocumentMoniker": "RestoranTakip\\Program.cs",
+              "ToolTip": "C:\\Users\\muham\\Projeler\\c# Projeler\\RestoranTakip\\RestoranTakip\\RestoranTakip\\Program.cs",
+              "RelativeToolTip": "RestoranTakip\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:22:47.679Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.Kullanicilar [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_4U1EH3V_SQLEXPRESS/RestoranDB/True/SqlTable/dbo.Kullanicilar.sql",
+              "ToolTip": "dbo.Kullanicilar [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-05T15:15:53.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.\u00DCr\u00FCnler.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_4U1EH3V_SQLEXPRESS/RestoranDB/True/SqlTable/dbo.\u00DCr\u00FCnler.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_4U1EH3V_SQLEXPRESS/RestoranDB/True/SqlTable/dbo.\u00DCr\u00FCnler.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-04T17:30:13.933Z"
             }
           ]
         }

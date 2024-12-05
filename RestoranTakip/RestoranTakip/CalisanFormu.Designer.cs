@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             dgvSiparisler = new DataGridView();
-            SiparisID = new DataGridViewTextBoxColumn();
-            MusteriAdi = new DataGridViewTextBoxColumn();
-            Telefon = new DataGridViewTextBoxColumn();
-            Adres = new DataGridViewTextBoxColumn();
-            Urunler = new DataGridViewTextBoxColumn();
-            ToplamFiyat = new DataGridViewTextBoxColumn();
-            Durum = new DataGridViewTextBoxColumn();
             btnHazirlaniyor = new Button();
             btnYolda = new Button();
             btnTeslimEdildi = new Button();
@@ -45,46 +38,10 @@
             // dgvSiparisler
             // 
             dgvSiparisler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSiparisler.Columns.AddRange(new DataGridViewColumn[] { SiparisID, MusteriAdi, Telefon, Adres, Urunler, ToplamFiyat, Durum });
             dgvSiparisler.Location = new Point(12, 34);
             dgvSiparisler.Name = "dgvSiparisler";
             dgvSiparisler.Size = new Size(776, 150);
             dgvSiparisler.TabIndex = 0;
-            // 
-            // SiparisID
-            // 
-            SiparisID.HeaderText = "SiparisID";
-            SiparisID.Name = "SiparisID";
-            // 
-            // MusteriAdi
-            // 
-            MusteriAdi.HeaderText = "Müşteri Adı";
-            MusteriAdi.Name = "MusteriAdi";
-            // 
-            // Telefon
-            // 
-            Telefon.HeaderText = "Telefon";
-            Telefon.Name = "Telefon";
-            // 
-            // Adres
-            // 
-            Adres.HeaderText = "Adres";
-            Adres.Name = "Adres";
-            // 
-            // Urunler
-            // 
-            Urunler.HeaderText = "Ürünler";
-            Urunler.Name = "Urunler";
-            // 
-            // ToplamFiyat
-            // 
-            ToplamFiyat.HeaderText = "Toplam Fiyat";
-            ToplamFiyat.Name = "ToplamFiyat";
-            // 
-            // Durum
-            // 
-            Durum.HeaderText = "Durum";
-            Durum.Name = "Durum";
             // 
             // btnHazirlaniyor
             // 
@@ -134,13 +91,6 @@
         #endregion
 
         private DataGridView dgvSiparisler;
-        private DataGridViewTextBoxColumn SiparisID;
-        private DataGridViewTextBoxColumn MusteriAdi;
-        private DataGridViewTextBoxColumn Telefon;
-        private DataGridViewTextBoxColumn Adres;
-        private DataGridViewTextBoxColumn Urunler;
-        private DataGridViewTextBoxColumn ToplamFiyat;
-        private DataGridViewTextBoxColumn Durum;
         private Button btnHazirlaniyor;
         private Button btnYolda;
         private Button btnTeslimEdildi;

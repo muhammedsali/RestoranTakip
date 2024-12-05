@@ -1,5 +1,5 @@
 using System;
-using Microsoft.Data.SqlClient; // Doðru namespace kullanýmý
+using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace RestoranTakip
@@ -34,7 +34,7 @@ namespace RestoranTakip
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string query = "SELECT * FROM Kullanýcýlar WHERE Eposta = @Eposta AND Þifre = @Þifre";
+                    string query = "SELECT * FROM Kullanicilar WHERE Eposta = @Eposta AND Sifre = @Þifre";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Eposta", kullaniciAdi);
@@ -46,22 +46,22 @@ namespace RestoranTakip
                             if (reader.HasRows)
                             {
                                 reader.Read();
-                                string rol = reader["Rol"].ToString();
+                                string rol = reader["Rol"] != DBNull.Value ? reader["Rol"].ToString() : string.Empty;
                                 MessageBox.Show("Giriþ baþarýlý!");
 
-                                if (rol == "Müþteri")
+                                if (rol == "Musteri")
                                 {
-                                    MusteriFormu musteriFormu = new MusteriFormu();
+                                    MusteriFormu musteriFormu = new();
                                     musteriFormu.Show();
                                 }
-                                else if (rol == "Çalýþan")
+                                else if (rol == "Calisan")
                                 {
-                                    CalisanFormu calisanFormu = new CalisanFormu();
+                                    CalisanFormu calisanFormu = new();
                                     calisanFormu.Show();
                                 }
-                                else if (rol == "Yönetici")
+                                else if (rol == "Yonetici")
                                 {
-                                    YoneticiFormu yoneticiFormu = new YoneticiFormu();
+                                    YoneticiFormu yoneticiFormu = new();
                                     yoneticiFormu.Show();
                                 }
                                 this.Hide();
