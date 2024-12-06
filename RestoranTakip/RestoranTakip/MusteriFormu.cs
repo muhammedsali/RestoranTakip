@@ -62,16 +62,34 @@ namespace RestoranTakip
 
         private void btnSepeteEkle_Click(object sender, EventArgs e)
         {
-
             if (lvMenu.SelectedItems.Count > 0)
             {
                 ListViewItem seciliUrun = lvMenu.SelectedItems[0];
-                DataRow satir = sepetTablosu.NewRow();
-                satir["UrunID"] = seciliUrun.SubItems[0].Text;
-                satir["UrunAdi"] = seciliUrun.SubItems[1].Text;
-                satir["Fiyat"] = Convert.ToDecimal(seciliUrun.SubItems[3].Text);
-                satir["Miktar"] = 1;
-                sepetTablosu.Rows.Add(satir);
+                string urunID = seciliUrun.SubItems[0].Text;
+                bool urunBulundu = false;
+
+                foreach (DataRow satir in sepetTablosu.Rows)
+                {
+                    if (satir["UrunID"].ToString() == urunID)
+                    {
+                        // Ürün zaten sepette, miktarı artır
+                        satir["Miktar"] = Convert.ToInt32(satir["Miktar"]) + 1;
+                        urunBulundu = true;
+                        break;
+                    }
+                }
+
+                if (!urunBulundu)
+                {
+                    // Ürün sepette bulunmadı, yeni satır ekle
+                    DataRow yeniSatir = sepetTablosu.NewRow();
+                    yeniSatir["UrunID"] = urunID;
+                    yeniSatir["UrunAdi"] = seciliUrun.SubItems[1].Text;
+                    yeniSatir["Fiyat"] = Convert.ToDecimal(seciliUrun.SubItems[3].Text);
+                    yeniSatir["Miktar"] = 1;
+                    sepetTablosu.Rows.Add(yeniSatir);
+                }
+
                 SepetToplaminiGuncelle();
             }
             else
@@ -79,6 +97,7 @@ namespace RestoranTakip
                 MessageBox.Show("Lütfen sepete eklemek için bir ürün seçin.");
             }
         }
+
 
         private void SepetToplaminiGuncelle()
         {
@@ -133,6 +152,11 @@ namespace RestoranTakip
                     MessageBox.Show($"Sipariş oluşturulurken bir hata oluştu: {ex.Message}");
                 }
             }
+        }
+
+        private void MusteriFormu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

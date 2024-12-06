@@ -80,12 +80,12 @@ namespace RestoranTakip
                     command.ExecuteNonQuery();
                 }
 
-                MessageBox.Show("Sipariş durumu güncellendi!");
-                SiparisleriYukle(); // Siparişleri yeniden yükleyin
+                MessageBox.Show("Siparis durumu güncellendi!");
+                SiparisleriYukle(); // Siparisleri yeniden yükleyin
             }
             else
             {
-                MessageBox.Show("Lütfen durumu güncellenecek bir sipariş seçin.");
+                MessageBox.Show("Lütfen durumu güncellenecek bir siparis seçin.");
             }
         }
     }

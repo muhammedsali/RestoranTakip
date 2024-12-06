@@ -33,7 +33,11 @@
             dgvSepet = new DataGridView();
             lblToplamFiyat = new Label();
             btnSiparisiOnayla = new Button();
+            tvKategoriler = new TreeView();
+            lvUrunler = new ListView();
+            pbUrunResmi = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvSepet).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbUrunResmi).BeginInit();
             SuspendLayout();
             // 
             // lvMenu
@@ -81,11 +85,37 @@
             btnSiparisiOnayla.UseVisualStyleBackColor = true;
             btnSiparisiOnayla.Click += btnSiparisiOnayla_Click;
             // 
+            // tvKategoriler
+            // 
+            tvKategoriler.Location = new Point(593, 12);
+            tvKategoriler.Name = "tvKategoriler";
+            tvKategoriler.Size = new Size(457, 327);
+            tvKategoriler.TabIndex = 5;
+            // 
+            // lvUrunler
+            // 
+            lvUrunler.Location = new Point(623, 38);
+            lvUrunler.Name = "lvUrunler";
+            lvUrunler.Size = new Size(389, 212);
+            lvUrunler.TabIndex = 6;
+            lvUrunler.UseCompatibleStateImageBehavior = false;
+            // 
+            // pbUrunResmi
+            // 
+            pbUrunResmi.Location = new Point(641, 60);
+            pbUrunResmi.Name = "pbUrunResmi";
+            pbUrunResmi.Size = new Size(100, 50);
+            pbUrunResmi.TabIndex = 7;
+            pbUrunResmi.TabStop = false;
+            // 
             // MusteriFormu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1053, 754);
+            ClientSize = new Size(1105, 763);
+            Controls.Add(pbUrunResmi);
+            Controls.Add(lvUrunler);
+            Controls.Add(tvKategoriler);
             Controls.Add(btnSiparisiOnayla);
             Controls.Add(lblToplamFiyat);
             Controls.Add(dgvSepet);
@@ -93,7 +123,9 @@
             Controls.Add(lvMenu);
             Name = "MusteriFormu";
             Text = "MusteriFormu";
+            Load += MusteriFormu_Load;
             ((System.ComponentModel.ISupportInitialize)dgvSepet).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbUrunResmi).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,5 +137,8 @@
         private DataGridView dgvSepet;
         private Label lblToplamFiyat;
         private Button btnSiparisiOnayla;
+        private TreeView tvKategoriler;
+        private ListView lvUrunler;
+        private PictureBox pbUrunResmi;
     }
 }
