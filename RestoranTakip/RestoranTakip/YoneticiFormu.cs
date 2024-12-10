@@ -21,7 +21,7 @@ namespace RestoranTakip
         {
             InitializeComponent();
             CalisanlariYukle();
-            UrunleriYukle();
+            UrunleriYenidenYukle(); // Mevcut ürünleri yüklemek için
         }
 
         private void CalisanlariYukle()
@@ -101,30 +101,36 @@ namespace RestoranTakip
                 MessageBox.Show("Lütfen silmek için bir çalışan seçin.");
             }
         }
-
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            UrunEkleFormu urunEkleFormu = new UrunEkleFormu();
+            urunEkleFormu.UrunEklendi += UrunEkleFormu_UrunEklendi;
+            urunEkleFormu.Show();
+        }
+
+
+        private void UrunEkleFormu_UrunEklendi(object sender, EventArgs e)
+        {
+            UrunleriYenidenYukle(); // Yeni ürün eklendikten sonra ürünleri yeniden yükleyin
+        }
+
+        private void UrunleriYenidenYukle()
+        {
+            try
             {
-                // Ürün bilgilerini girme formu oluştur
-                string urunAdi = "Yeni Ürün"; // Burada ürün bilgilerini al
-                string kategori = "Kategori";
-                decimal fiyat = 10.0m;
-                string aciklama = "Ürün açıklaması";
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT UrunID, UrunAdi, Kategori, Fiyat, Aciklama, ResimYolu FROM Urunler";
+                    SqlDataAdapter da = new SqlDataAdapter(query, connection);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
 
-                string query = "INSERT INTO Urunler (UrunAdi, Kategori, Fiyat, Aciklama) VALUES (@UrunAdi, @Kategori, @Fiyat, @Aciklama)";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@UrunAdi", urunAdi);
-                command.Parameters.AddWithValue("@Kategori", kategori);
-                command.Parameters.AddWithValue("@Fiyat", fiyat);
-                command.Parameters.AddWithValue("@Aciklama", aciklama);
-
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-
-                MessageBox.Show("Ürün başarıyla eklendi.");
-                UrunleriYukle(); // Ürün listesini güncelle
+                    dgvUrunler.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Bir hata oluştu: {ex.Message}");
             }
         }
 
@@ -134,19 +140,40 @@ namespace RestoranTakip
             if (dgvUrunler.SelectedRows.Count > 0)
             {
                 int urunID = Convert.ToInt32(dgvUrunler.SelectedRows[0].Cells["UrunID"].Value);
-
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                try
                 {
-                    string query = "DELETE FROM Urunler WHERE UrunID = @UrunID";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@UrunID", urunID);
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        SqlTransaction transaction = connection.BeginTransaction();
+                        try
+                        {
+                            // Önce ilgili SiparisUrunler kayıtlarını sil
+                            string deleteSiparisUrunlerQuery = "DELETE FROM SiparisUrunler WHERE UrunID = @UrunID";
+                            SqlCommand siparisUrunlerCommand = new SqlCommand(deleteSiparisUrunlerQuery, connection, transaction);
+                            siparisUrunlerCommand.Parameters.AddWithValue("@UrunID", urunID);
+                            siparisUrunlerCommand.ExecuteNonQuery();
 
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                    connection.Close();
+                            // Ardından ürünü sil
+                            string deleteUrunQuery = "DELETE FROM Urunler WHERE UrunID = @UrunID";
+                            SqlCommand urunCommand = new SqlCommand(deleteUrunQuery, connection, transaction);
+                            urunCommand.Parameters.AddWithValue("@UrunID", urunID);
+                            urunCommand.ExecuteNonQuery();
 
-                    MessageBox.Show("Ürün başarıyla silindi.");
-                    UrunleriYukle(); // Ürün listesini güncelle
+                            transaction.Commit();
+                            MessageBox.Show("Ürün başarıyla silindi.");
+                            UrunleriYenidenYukle(); // Ürün listesi güncelleniyor
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            MessageBox.Show($"Bir hata oluştu: {ex.Message}");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Bir hata oluştu: {ex.Message}");
                 }
             }
             else
@@ -161,30 +188,9 @@ namespace RestoranTakip
             if (dgvUrunler.SelectedRows.Count > 0)
             {
                 int urunID = Convert.ToInt32(dgvUrunler.SelectedRows[0].Cells["UrunID"].Value);
-
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    // Ürün bilgilerini güncelleme formu oluştur
-                    string urunAdi = "Güncellenmiş Ürün"; // Burada güncel ürün bilgilerini al
-                    string kategori = "Güncellenmiş Kategori";
-                    decimal fiyat = 15.0m;
-                    string aciklama = "Güncellenmiş ürün açıklaması";
-
-                    string query = "UPDATE Urunler SET UrunAdi = @UrunAdi, Kategori = @Kategori, Fiyat = @Fiyat, Aciklama = @Aciklama WHERE UrunID = @UrunID";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@UrunAdi", urunAdi);
-                    command.Parameters.AddWithValue("@Kategori", kategori);
-                    command.Parameters.AddWithValue("@Fiyat", fiyat);
-                    command.Parameters.AddWithValue("@Aciklama", aciklama);
-                    command.Parameters.AddWithValue("@UrunID", urunID);
-
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                    connection.Close();
-
-                    MessageBox.Show("Ürün başarıyla güncellendi.");
-                    UrunleriYukle(); // Ürün listesini güncelle
-                }
+                UrunEkleFormu urunEkleFormu = new UrunEkleFormu(urunID);
+                urunEkleFormu.UrunEklendi += UrunEkleFormu_UrunEklendi;
+                urunEkleFormu.Show();
             }
             else
             {

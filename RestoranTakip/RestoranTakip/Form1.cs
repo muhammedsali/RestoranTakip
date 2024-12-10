@@ -34,11 +34,11 @@ namespace RestoranTakip
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string query = "SELECT * FROM Kullanicilar WHERE Eposta = @Eposta AND Sifre = @Þifre";
+                    string query = "SELECT * FROM Kullanicilar WHERE Eposta = @Eposta AND Sifre = @Sifre";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Eposta", kullaniciAdi);
-                        command.Parameters.AddWithValue("@Þifre", sifre);
+                        command.Parameters.AddWithValue("@Sifre", sifre);
 
                         connection.Open();
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -46,22 +46,23 @@ namespace RestoranTakip
                             if (reader.HasRows)
                             {
                                 reader.Read();
-                                string rol = reader["Rol"] != DBNull.Value ? reader["Rol"].ToString() : string.Empty;
+                                // Veritabanýndan gelen deðerin DBNull olup olmadýðýný kontrol edin
+                                string? rol = reader.IsDBNull(reader.GetOrdinal("Rol")) ? null : reader["Rol"].ToString();
                                 MessageBox.Show("Giriþ baþarýlý!");
 
                                 if (rol == "Musteri")
                                 {
-                                    MusteriFormu musteriFormu = new();
+                                    MusteriFormu musteriFormu = new MusteriFormu();
                                     musteriFormu.Show();
                                 }
                                 else if (rol == "Calisan")
                                 {
-                                    CalisanFormu calisanFormu = new();
+                                    CalisanFormu calisanFormu = new CalisanFormu();
                                     calisanFormu.Show();
                                 }
                                 else if (rol == "Yonetici")
                                 {
-                                    YoneticiFormu yoneticiFormu = new();
+                                    YoneticiFormu yoneticiFormu = new YoneticiFormu();
                                     yoneticiFormu.Show();
                                 }
                                 this.Hide();
