@@ -84,6 +84,14 @@ namespace RestoranTakip
                     if (result > 0)
                     {
                         MessageBox.Show("Kayıt başarılı!");
+
+                        // Form1'i tekrar göster
+                        Form1 form1 = new Form1();
+                        form1.StartPosition = FormStartPosition.Manual;
+                        form1.Location = this.Location;
+                        form1.Show();
+
+                        // Form2'yi kapat
                         this.Close();
                     }
                     else
@@ -98,6 +106,7 @@ namespace RestoranTakip
                 MessageBox.Show($"Bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         // Parola doğrulama metodu
         private bool IsValidPassword(string password)

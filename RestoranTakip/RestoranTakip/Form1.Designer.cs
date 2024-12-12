@@ -46,7 +46,7 @@
             btnGiris.Margin = new Padding(3, 4, 3, 4);
             btnGiris.Name = "btnGiris";
             btnGiris.Size = new Size(274, 32);
-            btnGiris.TabIndex = 2;
+            btnGiris.TabIndex = 1;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = false;
             btnGiris.Click += btnGiris_Click;
@@ -61,13 +61,13 @@
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
             txtSifre.Size = new Size(274, 31);
-            txtSifre.TabIndex = 1;
+            txtSifre.TabIndex = 3;
             // 
             // txtKullaniciAdi
             // 
             txtKullaniciAdi.BackColor = Color.FromArgb(72, 74, 74);
             txtKullaniciAdi.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            txtKullaniciAdi.ForeColor = Color.White;
+            txtKullaniciAdi.ForeColor = Color.Silver;
             txtKullaniciAdi.Location = new Point(72, 400);
             txtKullaniciAdi.Margin = new Padding(3, 4, 3, 4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";

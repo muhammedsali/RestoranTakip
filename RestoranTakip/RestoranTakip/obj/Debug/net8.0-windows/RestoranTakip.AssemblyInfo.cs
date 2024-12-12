@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestoranTakip")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1dbd976cafa7e9820f6da52a78f05d7e83be57e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3b3fc1886ac268914904844f47c41788ab67b87")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestoranTakip")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestoranTakip")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
