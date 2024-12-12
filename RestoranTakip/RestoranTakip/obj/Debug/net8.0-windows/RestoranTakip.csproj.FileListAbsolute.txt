@@ -56,3 +56,5 @@ C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\ob
 C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanFormu.resources
 C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.YoneticiFormu.resources
 C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.UrunEkleFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanEkleFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Properties.Resources.resources

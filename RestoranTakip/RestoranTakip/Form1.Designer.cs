@@ -28,97 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            Button btnGiris;
             txtSifre = new TextBox();
             txtKullaniciAdi = new TextBox();
-            btnGiris = new Button();
             linkKayit = new LinkLabel();
+            button1 = new Button();
+            btnGiris = new Button();
             SuspendLayout();
             // 
-            // label1
+            // btnGiris
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(75, 55);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Kullanıcı Adı";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(75, 87);
-            label2.Name = "label2";
-            label2.Size = new Size(30, 15);
-            label2.TabIndex = 0;
-            label2.Text = "Şifre";
+            btnGiris.AutoSize = true;
+            btnGiris.BackColor = Color.FromArgb(255, 87, 87);
+            btnGiris.BackgroundImageLayout = ImageLayout.None;
+            btnGiris.FlatStyle = FlatStyle.Popup;
+            btnGiris.Location = new Point(71, 534);
+            btnGiris.Margin = new Padding(3, 4, 3, 4);
+            btnGiris.Name = "btnGiris";
+            btnGiris.Size = new Size(257, 32);
+            btnGiris.TabIndex = 2;
+            btnGiris.Text = "Giriş Yap";
+            btnGiris.UseVisualStyleBackColor = false;
+            btnGiris.Click += btnGiris_Click;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(179, 84);
+            txtSifre.BackColor = Color.FromArgb(72, 74, 74);
+            txtSifre.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txtSifre.ForeColor = Color.White;
+            txtSifre.Location = new Point(71, 472);
+            txtSifre.Margin = new Padding(3, 4, 3, 4);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
-            txtSifre.Size = new Size(100, 23);
+            txtSifre.Size = new Size(274, 31);
             txtSifre.TabIndex = 1;
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Location = new Point(179, 52);
+            txtKullaniciAdi.BackColor = Color.FromArgb(72, 74, 74);
+            txtKullaniciAdi.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txtKullaniciAdi.ForeColor = Color.White;
+            txtKullaniciAdi.Location = new Point(71, 398);
+            txtKullaniciAdi.Margin = new Padding(3, 4, 3, 4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(100, 23);
+            txtKullaniciAdi.Size = new Size(274, 31);
             txtKullaniciAdi.TabIndex = 1;
-            // 
-            // btnGiris
-            // 
-            btnGiris.Location = new Point(179, 122);
-            btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(100, 23);
-            btnGiris.TabIndex = 2;
-            btnGiris.Text = "Giriş Yap";
-            btnGiris.UseVisualStyleBackColor = true;
-            btnGiris.Click += btnGiris_Click;
             // 
             // linkKayit
             // 
             linkKayit.AutoSize = true;
-            linkKayit.Location = new Point(75, 130);
+            linkKayit.BackColor = Color.Transparent;
+            linkKayit.Location = new Point(271, 597);
             linkKayit.Name = "linkKayit";
-            linkKayit.Size = new Size(42, 15);
+            linkKayit.Size = new Size(53, 20);
             linkKayit.TabIndex = 3;
             linkKayit.TabStop = true;
             linkKayit.Text = "Üye Ol";
             linkKayit.LinkClicked += linkKayit_LinkClicked;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = Properties.Resources.pngtree_red_cross_paint_clipart_transparent_background_vector_png_image_7110618;
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(359, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(43, 39);
+            button1.TabIndex = 4;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(388, 235);
+            BackgroundImage = Properties.Resources.Login_Page_Mobile_Prototype;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(414, 763);
+            Controls.Add(button1);
             Controls.Add(linkKayit);
             Controls.Add(btnGiris);
             Controls.Add(txtKullaniciAdi);
             Controls.Add(txtSifre);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Restoran Takip Giriş Ekranı";
             TopMost = true;
+            MouseDown += Form1_MouseDown;
+            MouseMove += Form1_MouseMove;
+            MouseUp += Form1_MouseUp;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
         private TextBox txtSifre;
         private TextBox txtKullaniciAdi;
         private Button btnGiris;
         private LinkLabel linkKayit;
+        private Button button1;
     }
 }

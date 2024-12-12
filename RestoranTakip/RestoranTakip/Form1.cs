@@ -86,5 +86,33 @@ namespace RestoranTakip
             Form2 kayitFormu = new Form2();
             kayitFormu.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        bool move;
+        int mouse_x;
+        int mouse_y;
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move = true;
+            mouse_x=e.X; mouse_y=e.Y;
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+           move=false; 
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move)
+            {
+                this.SetDesktopLocation(MousePosition.X - mouse_x, MousePosition.Y - mouse_y);
+            }
+        }
     }
 }

@@ -38,23 +38,34 @@
             btnGunlukRapor = new Button();
             btnHaftalikRapor = new Button();
             btnAylikRapor = new Button();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
+            tabPage3 = new TabPage();
             ((System.ComponentModel.ISupportInitialize)dgvCalisanlar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvUrunler).BeginInit();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            tabPage3.SuspendLayout();
             SuspendLayout();
             // 
             // dgvCalisanlar
             // 
             dgvCalisanlar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCalisanlar.Location = new Point(21, 12);
+            dgvCalisanlar.Location = new Point(6, 24);
+            dgvCalisanlar.Margin = new Padding(3, 4, 3, 4);
             dgvCalisanlar.Name = "dgvCalisanlar";
-            dgvCalisanlar.Size = new Size(737, 150);
+            dgvCalisanlar.RowHeadersWidth = 51;
+            dgvCalisanlar.Size = new Size(1113, 397);
             dgvCalisanlar.TabIndex = 0;
             // 
             // btnCalisanEkle
             // 
-            btnCalisanEkle.Location = new Point(21, 182);
+            btnCalisanEkle.Location = new Point(6, 482);
+            btnCalisanEkle.Margin = new Padding(3, 4, 3, 4);
             btnCalisanEkle.Name = "btnCalisanEkle";
-            btnCalisanEkle.Size = new Size(98, 23);
+            btnCalisanEkle.Size = new Size(133, 31);
             btnCalisanEkle.TabIndex = 1;
             btnCalisanEkle.Text = "Çalışan Ekle";
             btnCalisanEkle.UseVisualStyleBackColor = true;
@@ -62,19 +73,20 @@
             // 
             // btnCalisanSil
             // 
-            btnCalisanSil.Location = new Point(141, 182);
+            btnCalisanSil.Location = new Point(177, 482);
+            btnCalisanSil.Margin = new Padding(3, 4, 3, 4);
             btnCalisanSil.Name = "btnCalisanSil";
-            btnCalisanSil.Size = new Size(98, 23);
-            btnCalisanSil.TabIndex = 2;
+            btnCalisanSil.Size = new Size(133, 31);
+            btnCalisanSil.TabIndex = 6;
             btnCalisanSil.Text = "Çalışanı Sil";
-            btnCalisanSil.UseVisualStyleBackColor = true;
             btnCalisanSil.Click += btnCalisanSil_Click;
             // 
             // btnUrunSil
             // 
-            btnUrunSil.Location = new Point(141, 424);
+            btnUrunSil.Location = new Point(196, 424);
+            btnUrunSil.Margin = new Padding(3, 4, 3, 4);
             btnUrunSil.Name = "btnUrunSil";
-            btnUrunSil.Size = new Size(98, 23);
+            btnUrunSil.Size = new Size(125, 31);
             btnUrunSil.TabIndex = 5;
             btnUrunSil.Text = "Ürünü Sil";
             btnUrunSil.UseVisualStyleBackColor = true;
@@ -82,9 +94,10 @@
             // 
             // btnUrunEkle
             // 
-            btnUrunEkle.Location = new Point(21, 424);
+            btnUrunEkle.Location = new Point(20, 424);
+            btnUrunEkle.Margin = new Padding(3, 4, 3, 4);
             btnUrunEkle.Name = "btnUrunEkle";
-            btnUrunEkle.Size = new Size(98, 23);
+            btnUrunEkle.Size = new Size(125, 31);
             btnUrunEkle.TabIndex = 4;
             btnUrunEkle.Text = "Ürün Ekle";
             btnUrunEkle.UseVisualStyleBackColor = true;
@@ -93,16 +106,19 @@
             // dgvUrunler
             // 
             dgvUrunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUrunler.Location = new Point(21, 254);
+            dgvUrunler.Location = new Point(3, 3);
+            dgvUrunler.Margin = new Padding(3, 4, 3, 4);
             dgvUrunler.Name = "dgvUrunler";
-            dgvUrunler.Size = new Size(737, 150);
+            dgvUrunler.RowHeadersWidth = 51;
+            dgvUrunler.Size = new Size(1293, 387);
             dgvUrunler.TabIndex = 3;
             // 
             // btnUrunGuncelle
             // 
-            btnUrunGuncelle.Location = new Point(276, 424);
+            btnUrunGuncelle.Location = new Point(372, 424);
+            btnUrunGuncelle.Margin = new Padding(3, 4, 3, 4);
             btnUrunGuncelle.Name = "btnUrunGuncelle";
-            btnUrunGuncelle.Size = new Size(98, 23);
+            btnUrunGuncelle.Size = new Size(125, 31);
             btnUrunGuncelle.TabIndex = 5;
             btnUrunGuncelle.Text = "Ürünü Güncelle";
             btnUrunGuncelle.UseVisualStyleBackColor = true;
@@ -110,9 +126,10 @@
             // 
             // btnGunlukRapor
             // 
-            btnGunlukRapor.Location = new Point(405, 612);
+            btnGunlukRapor.Location = new Point(3, 18);
+            btnGunlukRapor.Margin = new Padding(3, 4, 3, 4);
             btnGunlukRapor.Name = "btnGunlukRapor";
-            btnGunlukRapor.Size = new Size(98, 23);
+            btnGunlukRapor.Size = new Size(1116, 31);
             btnGunlukRapor.TabIndex = 4;
             btnGunlukRapor.Text = "Günlük Rapor";
             btnGunlukRapor.UseVisualStyleBackColor = true;
@@ -120,9 +137,10 @@
             // 
             // btnHaftalikRapor
             // 
-            btnHaftalikRapor.Location = new Point(525, 612);
+            btnHaftalikRapor.Location = new Point(3, 69);
+            btnHaftalikRapor.Margin = new Padding(3, 4, 3, 4);
             btnHaftalikRapor.Name = "btnHaftalikRapor";
-            btnHaftalikRapor.Size = new Size(98, 23);
+            btnHaftalikRapor.Size = new Size(1116, 31);
             btnHaftalikRapor.TabIndex = 5;
             btnHaftalikRapor.Text = "Haftalık Rapor";
             btnHaftalikRapor.UseVisualStyleBackColor = true;
@@ -130,33 +148,83 @@
             // 
             // btnAylikRapor
             // 
-            btnAylikRapor.Location = new Point(660, 612);
+            btnAylikRapor.Location = new Point(3, 129);
+            btnAylikRapor.Margin = new Padding(3, 4, 3, 4);
             btnAylikRapor.Name = "btnAylikRapor";
-            btnAylikRapor.Size = new Size(98, 23);
+            btnAylikRapor.Size = new Size(1116, 31);
             btnAylikRapor.TabIndex = 5;
             btnAylikRapor.Text = "Aylık Rapor";
             btnAylikRapor.UseVisualStyleBackColor = true;
             btnAylikRapor.Click += btnAylikRapor_Click;
             // 
+            // tabControl1
+            // 
+            tabControl1.AccessibleName = "";
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Dock = DockStyle.Top;
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1307, 855);
+            tabControl1.TabIndex = 7;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(dgvUrunler);
+            tabPage1.Controls.Add(btnUrunEkle);
+            tabPage1.Controls.Add(btnUrunSil);
+            tabPage1.Controls.Add(btnUrunGuncelle);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1299, 822);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Ürün Yönetimi";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(dgvCalisanlar);
+            tabPage2.Controls.Add(btnCalisanEkle);
+            tabPage2.Controls.Add(btnCalisanSil);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1299, 822);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Kullanıcı Yönetimi";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Controls.Add(btnAylikRapor);
+            tabPage3.Controls.Add(btnGunlukRapor);
+            tabPage3.Controls.Add(btnHaftalikRapor);
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(1299, 822);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Raporlar";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
             // YoneticiFormu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(777, 693);
-            Controls.Add(btnAylikRapor);
-            Controls.Add(btnHaftalikRapor);
-            Controls.Add(btnUrunGuncelle);
-            Controls.Add(btnGunlukRapor);
-            Controls.Add(btnUrunSil);
-            Controls.Add(btnUrunEkle);
-            Controls.Add(dgvUrunler);
-            Controls.Add(btnCalisanSil);
-            Controls.Add(btnCalisanEkle);
-            Controls.Add(dgvCalisanlar);
+            ClientSize = new Size(1307, 924);
+            Controls.Add(tabControl1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "YoneticiFormu";
             Text = "YoneticiFormu";
             ((System.ComponentModel.ISupportInitialize)dgvCalisanlar).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvUrunler).EndInit();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            tabPage3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -172,5 +240,9 @@
         private Button btnGunlukRapor;
         private Button btnHaftalikRapor;
         private Button btnAylikRapor;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
     }
 }
