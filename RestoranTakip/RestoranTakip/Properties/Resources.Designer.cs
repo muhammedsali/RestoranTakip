@@ -63,9 +63,9 @@ namespace RestoranTakip.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap images {
+        internal static System.Drawing.Bitmap frm2s {
             get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
+                object obj = ResourceManager.GetObject("frm2s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace RestoranTakip.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Login_Page_Mobile_Prototype {
+        internal static System.Drawing.Bitmap Login_Page_Mobile_Prototype1 {
             get {
-                object obj = ResourceManager.GetObject("Login Page Mobile Prototype", resourceCulture);
+                object obj = ResourceManager.GetObject("Login Page Mobile Prototype1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

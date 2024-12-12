@@ -45,7 +45,7 @@
             btnGiris.Location = new Point(71, 534);
             btnGiris.Margin = new Padding(3, 4, 3, 4);
             btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(257, 32);
+            btnGiris.Size = new Size(274, 32);
             btnGiris.TabIndex = 2;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = false;
@@ -68,19 +68,24 @@
             txtKullaniciAdi.BackColor = Color.FromArgb(72, 74, 74);
             txtKullaniciAdi.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
             txtKullaniciAdi.ForeColor = Color.White;
-            txtKullaniciAdi.Location = new Point(71, 398);
+            txtKullaniciAdi.Location = new Point(72, 400);
             txtKullaniciAdi.Margin = new Padding(3, 4, 3, 4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(274, 31);
-            txtKullaniciAdi.TabIndex = 1;
+            txtKullaniciAdi.TabIndex = 2;
+            txtKullaniciAdi.Text = "Kullanıcı Adınız";
+            txtKullaniciAdi.Enter += txtKullaniciAdi_Enter;
+            txtKullaniciAdi.Leave += txtKullaniciAdi_Leave;
             // 
             // linkKayit
             // 
             linkKayit.AutoSize = true;
             linkKayit.BackColor = Color.Transparent;
-            linkKayit.Location = new Point(271, 597);
+            linkKayit.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            linkKayit.LinkColor = Color.FromArgb(255, 87, 87);
+            linkKayit.Location = new Point(281, 593);
             linkKayit.Name = "linkKayit";
-            linkKayit.Size = new Size(53, 20);
+            linkKayit.Size = new Size(65, 25);
             linkKayit.TabIndex = 3;
             linkKayit.TabStop = true;
             linkKayit.Text = "Üye Ol";
@@ -103,7 +108,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Login_Page_Mobile_Prototype;
+            BackgroundImage = Properties.Resources.Login_Page_Mobile_Prototype1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(414, 763);
             Controls.Add(button1);

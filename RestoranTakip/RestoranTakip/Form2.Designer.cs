@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
             txtSoyad = new TextBox();
             txtAd = new TextBox();
             txtSifre = new TextBox();
@@ -42,137 +36,140 @@
             txtTelefon = new TextBox();
             cbRol = new ComboBox();
             btnKayit = new Button();
+            button1 = new Button();
+            linkLabel1 = new LinkLabel();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(114, 44);
-            label1.Name = "label1";
-            label1.Size = new Size(28, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Ad";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(95, 109);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 0;
-            label2.Text = "Soyad";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(86, 164);
-            label3.Name = "label3";
-            label3.Size = new Size(60, 20);
-            label3.TabIndex = 0;
-            label3.Text = "E-posta";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(105, 216);
-            label4.Name = "label4";
-            label4.Size = new Size(39, 20);
-            label4.TabIndex = 1;
-            label4.Text = "Şifre";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(88, 281);
-            label5.Name = "label5";
-            label5.Size = new Size(58, 20);
-            label5.TabIndex = 2;
-            label5.Text = "Telefon";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(97, 335);
-            label6.Name = "label6";
-            label6.Size = new Size(47, 20);
-            label6.TabIndex = 3;
-            label6.Text = "Adres";
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(169, 99);
+            txtSoyad.BackColor = Color.FromArgb(72, 74, 74);
+            txtSoyad.Font = new Font("Segoe UI", 10.2F);
+            txtSoyad.ForeColor = Color.White;
+            txtSoyad.Location = new Point(70, 338);
             txtSoyad.Margin = new Padding(3, 4, 3, 4);
             txtSoyad.Name = "txtSoyad";
-            txtSoyad.Size = new Size(114, 27);
-            txtSoyad.TabIndex = 4;
+            txtSoyad.Size = new Size(286, 30);
+            txtSoyad.TabIndex = 2;
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(169, 40);
+            txtAd.BackColor = Color.FromArgb(72, 74, 74);
+            txtAd.Font = new Font("Segoe UI", 10.2F);
+            txtAd.ForeColor = Color.White;
+            txtAd.Location = new Point(71, 277);
             txtAd.Margin = new Padding(3, 4, 3, 4);
             txtAd.Name = "txtAd";
-            txtAd.Size = new Size(114, 27);
-            txtAd.TabIndex = 4;
+            txtAd.Size = new Size(286, 30);
+            txtAd.TabIndex = 1;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(169, 216);
+            txtSifre.BackColor = Color.FromArgb(72, 74, 74);
+            txtSifre.Font = new Font("Segoe UI", 10.2F);
+            txtSifre.ForeColor = Color.White;
+            txtSifre.Location = new Point(69, 446);
             txtSifre.Margin = new Padding(3, 4, 3, 4);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
-            txtSifre.Size = new Size(114, 27);
+            txtSifre.Size = new Size(286, 30);
             txtSifre.TabIndex = 4;
             // 
             // txtEposta
             // 
-            txtEposta.Location = new Point(169, 160);
+            txtEposta.BackColor = Color.FromArgb(72, 74, 74);
+            txtEposta.Font = new Font("Segoe UI", 10.2F);
+            txtEposta.ForeColor = Color.White;
+            txtEposta.Location = new Point(69, 392);
             txtEposta.Margin = new Padding(3, 4, 3, 4);
             txtEposta.Name = "txtEposta";
-            txtEposta.Size = new Size(114, 27);
-            txtEposta.TabIndex = 4;
+            txtEposta.Size = new Size(286, 30);
+            txtEposta.TabIndex = 3;
             // 
             // txtAdres
             // 
-            txtAdres.Location = new Point(169, 331);
+            txtAdres.BackColor = Color.FromArgb(72, 74, 74);
+            txtAdres.Font = new Font("Segoe UI", 10.2F);
+            txtAdres.ForeColor = Color.White;
+            txtAdres.Location = new Point(68, 566);
             txtAdres.Margin = new Padding(3, 4, 3, 4);
             txtAdres.Name = "txtAdres";
-            txtAdres.Size = new Size(114, 27);
-            txtAdres.TabIndex = 4;
+            txtAdres.Size = new Size(286, 30);
+            txtAdres.TabIndex = 6;
             // 
             // txtTelefon
             // 
-            txtTelefon.Location = new Point(169, 277);
+            txtTelefon.BackColor = Color.FromArgb(72, 74, 74);
+            txtTelefon.Font = new Font("Segoe UI", 10.2F);
+            txtTelefon.ForeColor = Color.White;
+            txtTelefon.Location = new Point(70, 509);
             txtTelefon.Margin = new Padding(3, 4, 3, 4);
             txtTelefon.Name = "txtTelefon";
-            txtTelefon.Size = new Size(114, 27);
-            txtTelefon.TabIndex = 4;
+            txtTelefon.Size = new Size(286, 30);
+            txtTelefon.TabIndex = 5;
             // 
             // cbRol
             // 
+            cbRol.BackColor = Color.FromArgb(72, 74, 74);
+            cbRol.ForeColor = Color.White;
             cbRol.FormattingEnabled = true;
             cbRol.Items.AddRange(new object[] { "Musteri", "Calisan", "Yonetici" });
-            cbRol.Location = new Point(169, 381);
+            cbRol.Location = new Point(243, 608);
             cbRol.Margin = new Padding(3, 4, 3, 4);
             cbRol.Name = "cbRol";
             cbRol.Size = new Size(114, 28);
-            cbRol.TabIndex = 5;
+            cbRol.TabIndex = 7;
             // 
             // btnKayit
             // 
-            btnKayit.Location = new Point(169, 479);
+            btnKayit.BackColor = Color.Transparent;
+            btnKayit.BackgroundImageLayout = ImageLayout.None;
+            btnKayit.FlatStyle = FlatStyle.Popup;
+            btnKayit.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            btnKayit.ForeColor = Color.Black;
+            btnKayit.Location = new Point(110, 656);
             btnKayit.Margin = new Padding(3, 4, 3, 4);
             btnKayit.Name = "btnKayit";
-            btnKayit.Size = new Size(114, 31);
-            btnKayit.TabIndex = 6;
+            btnKayit.Size = new Size(205, 32);
+            btnKayit.TabIndex = 8;
             btnKayit.Text = "Kayıt Ol";
-            btnKayit.UseVisualStyleBackColor = true;
+            btnKayit.UseVisualStyleBackColor = false;
             btnKayit.Click += btnKayit_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = Properties.Resources.pngtree_red_cross_paint_clipart_transparent_background_vector_png_image_7110618;
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(372, -2);
+            button1.Name = "button1";
+            button1.Size = new Size(43, 39);
+            button1.TabIndex = 10;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.LinkColor = Color.FromArgb(255, 87, 87);
+            linkLabel1.Location = new Point(151, 705);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(104, 20);
+            linkLabel1.TabIndex = 9;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Zaten Üyeyim!";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(453, 624);
+            BackgroundImage = Properties.Resources.frm2s;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(414, 763);
+            Controls.Add(linkLabel1);
+            Controls.Add(button1);
             Controls.Add(btnKayit);
             Controls.Add(cbRol);
             Controls.Add(txtTelefon);
@@ -181,28 +178,20 @@
             Controls.Add(txtSifre);
             Controls.Add(txtAd);
             Controls.Add(txtSoyad);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;
+            MouseDown += Form2_MouseDown;
+            MouseMove += Form2_MouseMove;
+            MouseUp += Form2_MouseUp;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
         private TextBox txtSoyad;
         private TextBox txtAd;
         private TextBox txtSifre;
@@ -211,5 +200,7 @@
         private TextBox txtTelefon;
         private ComboBox cbRol;
         private Button btnKayit;
+        private Button button1;
+        private LinkLabel linkLabel1;
     }
 }

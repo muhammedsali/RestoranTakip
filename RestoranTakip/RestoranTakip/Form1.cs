@@ -83,9 +83,13 @@ namespace RestoranTakip
 
         private void linkKayit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 kayitFormu = new Form2();
-            kayitFormu.Show();
+            Form2 form2 = new Form2(); // Mevcut Form1'i gönderiyoruz
+            form2.StartPosition = FormStartPosition.Manual; // Formun konumunu koru
+            form2.Location = this.Location; // Ayný konuma ayarla
+            form2.Show();
+            this.Hide(); // Form1'i gizle
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -99,12 +103,12 @@ namespace RestoranTakip
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             move = true;
-            mouse_x=e.X; mouse_y=e.Y;
+            mouse_x = e.X; mouse_y = e.Y;
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-           move=false; 
+            move = false;
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
@@ -112,6 +116,25 @@ namespace RestoranTakip
             if (move)
             {
                 this.SetDesktopLocation(MousePosition.X - mouse_x, MousePosition.Y - mouse_y);
+            }
+        }
+
+        private void txtKullaniciAdi_Enter(object sender, EventArgs e)
+        {
+            if(txtKullaniciAdi.Text=="Kullanýcý Adýnýz")
+            {
+                txtKullaniciAdi.Text = "";
+                txtKullaniciAdi.ForeColor = Color.White;
+            }
+        }
+
+        private void txtKullaniciAdi_Leave(object sender, EventArgs e)
+        {
+            if (txtKullaniciAdi.Text == "")
+            {
+                txtKullaniciAdi.Text = "Kullanýcý Adýnýz";
+                txtKullaniciAdi.ForeColor = Color.Silver;
+
             }
         }
     }
