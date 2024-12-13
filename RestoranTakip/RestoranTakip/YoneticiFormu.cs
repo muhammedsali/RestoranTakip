@@ -20,24 +20,20 @@ namespace RestoranTakip
         public YoneticiFormu()
         {
             InitializeComponent();
-            CalisanlariYukle();
-            UrunleriYenidenYukle(); // Mevcut ürünleri yüklemek için
             KullanicilariYenidenYukle();
+            UrunleriYenidenYukle(); // Mevcut ürünleri yüklemek için
+         
 
         }
 
-        private void CalisanlariYukle()
-        {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                string query = "SELECT KullaniciID, Ad, Soyad, Eposta, Telefon FROM Kullanicilar";
-                SqlDataAdapter da = new SqlDataAdapter(query, connection);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
 
-                dgvCalisanlar.DataSource = dt;
-            }
-        }
+
+
+
+
+
+
+
         private void btnCalisanSil_Click(object sender, EventArgs e)
         {
             if (dgvCalisanlar.SelectedRows.Count > 0)
@@ -115,38 +111,46 @@ namespace RestoranTakip
 
         private void CalisanEkleFormu_CalisanEklendi(object? sender, EventArgs e)
         {
-            CalisanlariYenidenYukle(); // Yeni çalışan eklendikten sonra çalışanları yeniden yükleyin
+            KullanicilariYenidenYukle(); // Yeni çalışan eklendikten sonra çalışanları yeniden yükleyin
         }
-
-        private void CalisanlariYenidenYukle()
-        {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string query = "SELECT KullaniciID, Ad, Soyad, Eposta, Telefon, Adres, Rol FROM Kullanicilar WHERE Rol = 'Calisan'";
-                    SqlDataAdapter da = new SqlDataAdapter(query, connection);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-
-                    dgvCalisanlar.DataSource = dt;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Bir hata oluştu: {ex.Message}");
-            }
-        }
-
 
 
         //URUNLER
 
 
-
-        private void UrunEkleFormu_UrunEklendi(object sender, EventArgs e)
+        private void YoneticiFormu_Load(object sender, EventArgs e)
         {
-            UrunleriYenidenYukle(); // Yeni ürün eklendikten sonra ürünleri yeniden yükleyin
+            // DataBindingComplete olayını ekleyin
+            this.dgvUrunler.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(this.dgvUrunler_DataBindingComplete);
+
+            // Ürünleri yükleyin
+            UrunleriYenidenYukle();
+        }
+
+        private void dgvUrunler_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            string bosResimYolu = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resimler", "deneme.jpg");
+
+            if (!File.Exists(bosResimYolu))
+            {
+                MessageBox.Show($"Varsayılan resim dosyası bulunamadı: {bosResimYolu}");
+                return;
+            }
+
+            foreach (DataGridViewRow row in dgvUrunler.Rows)
+            {
+                row.Height = 125; // Satır yüksekliğini ayarlayın
+                row.Cells["Resim"].Value = Image.FromFile(bosResimYolu);
+            }
+
+            // DataGridView hücre stillerini ayarlayın
+            DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
+            cellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            cellStyle.NullValue = null;
+            cellStyle.WrapMode = DataGridViewTriState.True;
+            dgvUrunler.Columns["Resim"].DefaultCellStyle = cellStyle;
+            dgvUrunler.AutoResizeColumns();
+            dgvUrunler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void UrunleriYenidenYukle()
@@ -161,6 +165,17 @@ namespace RestoranTakip
                     da.Fill(dt);
 
                     dgvUrunler.DataSource = dt;
+
+                    // DataGridView'de resimleri göstermek için sütun ekleyin
+                    if (!dgvUrunler.Columns.Contains("Resim"))
+                    {
+                        DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
+                        imageColumn.HeaderText = "Ürün Resmi";
+                        imageColumn.Name = "Resim";
+                        imageColumn.Width = 125; // Sütun genişliğini ayarlayın
+                        imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // Resimlerin sığmasını sağlayın
+                        dgvUrunler.Columns.Add(imageColumn);
+                    }
                 }
             }
             catch (Exception ex)
@@ -171,13 +186,70 @@ namespace RestoranTakip
 
 
 
+        private void btnArama_Click(object sender, EventArgs e)
+        {
+            UrunAra(txtArama.Text.Trim());
+            string aramaMetni = txtArama.Text.Trim();
+
+            if (!string.IsNullOrEmpty(aramaMetni))
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT UrunID, UrunAdi, Kategori, Fiyat, Aciklama,ResimYolu FROM Urunler WHERE UrunAdi LIKE @AramaMetni";
+                    SqlDataAdapter da = new SqlDataAdapter(query, connection);
+                    da.SelectCommand.Parameters.AddWithValue("@AramaMetni", "%" + aramaMetni + "%");
+
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    dgvUrunler.DataSource = dt;
+                }
+            }
+            else
+            {
+                UrunleriYenidenYukle(); // Arama metni boşsa tüm ürünleri yükle
+            }
+        }
+
+        private void txtArama_TextChanged(object sender, EventArgs e)
+        {
+            UrunAra(txtArama.Text.Trim());
+        }
+
+        private void UrunAra(string aramaMetni)
+        {
+            if (!string.IsNullOrEmpty(aramaMetni))
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT UrunID, UrunAdi, Kategori, Fiyat, Aciklama,ResimYolu FROM Urunler WHERE UrunAdi LIKE @AramaMetni";
+                    SqlDataAdapter da = new SqlDataAdapter(query, connection);
+                    da.SelectCommand.Parameters.AddWithValue("@AramaMetni", "%" + aramaMetni + "%");
+
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    dgvUrunler.DataSource = dt;
+                }
+            }
+            else
+            {
+                UrunleriYenidenYukle(); // Arama metni boşsa tüm ürünleri yükle
+            }
+        }
+
+        private void UrunEkleFormu_UrunEklendi(object sender, EventArgs e)
+        {
+            UrunleriYenidenYukle(); // Yeni ürün eklendikten sonra ürünleri yeniden yükleyin
+        }
+
+
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
             UrunEkleFormu urunEkleFormu = new UrunEkleFormu();
             urunEkleFormu.UrunEklendi += UrunEkleFormu_UrunEklendi;
             urunEkleFormu.Show();
         }
-
 
         private void btnUrunSil_Click(object sender, EventArgs e)
         {
@@ -225,7 +297,6 @@ namespace RestoranTakip
                 MessageBox.Show("Lütfen silmek için bir ürün seçin.");
             }
         }
-
 
         private void btnUrunGuncelle_Click(object sender, EventArgs e)
         {
@@ -309,10 +380,6 @@ namespace RestoranTakip
                 raporFormu.Show();
             }
         }
-
-
-
-
         private void btnAylikRapor_Click(object sender, EventArgs e)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -359,7 +426,6 @@ namespace RestoranTakip
             }
         }
 
-
-
+      
     }
 }

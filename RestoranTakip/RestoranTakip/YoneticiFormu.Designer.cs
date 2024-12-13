@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dgvUrunler = new DataGridView();
+            txtArama = new TextBox();
+            btnArama = new Button();
             dgvCalisanlar = new DataGridView();
             btnCalisanEkle = new Button();
             btnCalisanSil = new Button();
             btnUrunSil = new Button();
             btnUrunEkle = new Button();
-            dgvUrunler = new DataGridView();
             btnUrunGuncelle = new Button();
             btnGunlukRapor = new Button();
             btnHaftalikRapor = new Button();
@@ -42,13 +44,41 @@
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
-            ((System.ComponentModel.ISupportInitialize)dgvCalisanlar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvUrunler).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCalisanlar).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             tabPage3.SuspendLayout();
             SuspendLayout();
+            // 
+            // dgvUrunler
+            // 
+            dgvUrunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUrunler.Location = new Point(3, 3);
+            dgvUrunler.Margin = new Padding(3, 4, 3, 4);
+            dgvUrunler.Name = "dgvUrunler";
+            dgvUrunler.RowHeadersWidth = 51;
+            dgvUrunler.Size = new Size(1438, 778);
+            dgvUrunler.TabIndex = 3;
+            // 
+            // txtArama
+            // 
+            txtArama.Location = new Point(1470, 15);
+            txtArama.Name = "txtArama";
+            txtArama.Size = new Size(307, 27);
+            txtArama.TabIndex = 6;
+            txtArama.TextChanged += txtArama_TextChanged;
+            // 
+            // btnArama
+            // 
+            btnArama.Location = new Point(1683, 64);
+            btnArama.Name = "btnArama";
+            btnArama.Size = new Size(94, 29);
+            btnArama.TabIndex = 7;
+            btnArama.Text = "Ara";
+            btnArama.UseVisualStyleBackColor = true;
+            btnArama.Click += btnArama_Click;
             // 
             // dgvCalisanlar
             // 
@@ -83,10 +113,10 @@
             // 
             // btnUrunSil
             // 
-            btnUrunSil.Location = new Point(196, 424);
+            btnUrunSil.Location = new Point(1461, 685);
             btnUrunSil.Margin = new Padding(3, 4, 3, 4);
             btnUrunSil.Name = "btnUrunSil";
-            btnUrunSil.Size = new Size(125, 31);
+            btnUrunSil.Size = new Size(306, 40);
             btnUrunSil.TabIndex = 5;
             btnUrunSil.Text = "Ürünü Sil";
             btnUrunSil.UseVisualStyleBackColor = true;
@@ -94,31 +124,21 @@
             // 
             // btnUrunEkle
             // 
-            btnUrunEkle.Location = new Point(20, 424);
+            btnUrunEkle.Location = new Point(1461, 622);
             btnUrunEkle.Margin = new Padding(3, 4, 3, 4);
             btnUrunEkle.Name = "btnUrunEkle";
-            btnUrunEkle.Size = new Size(125, 31);
+            btnUrunEkle.Size = new Size(306, 40);
             btnUrunEkle.TabIndex = 4;
             btnUrunEkle.Text = "Ürün Ekle";
             btnUrunEkle.UseVisualStyleBackColor = true;
             btnUrunEkle.Click += btnUrunEkle_Click;
             // 
-            // dgvUrunler
-            // 
-            dgvUrunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUrunler.Location = new Point(3, 3);
-            dgvUrunler.Margin = new Padding(3, 4, 3, 4);
-            dgvUrunler.Name = "dgvUrunler";
-            dgvUrunler.RowHeadersWidth = 51;
-            dgvUrunler.Size = new Size(1293, 387);
-            dgvUrunler.TabIndex = 3;
-            // 
             // btnUrunGuncelle
             // 
-            btnUrunGuncelle.Location = new Point(372, 424);
+            btnUrunGuncelle.Location = new Point(1461, 741);
             btnUrunGuncelle.Margin = new Padding(3, 4, 3, 4);
             btnUrunGuncelle.Name = "btnUrunGuncelle";
-            btnUrunGuncelle.Size = new Size(125, 31);
+            btnUrunGuncelle.Size = new Size(306, 40);
             btnUrunGuncelle.TabIndex = 5;
             btnUrunGuncelle.Text = "Ürünü Güncelle";
             btnUrunGuncelle.UseVisualStyleBackColor = true;
@@ -167,11 +187,13 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1307, 855);
+            tabControl1.Size = new Size(1801, 855);
             tabControl1.TabIndex = 7;
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(btnArama);
+            tabPage1.Controls.Add(txtArama);
             tabPage1.Controls.Add(dgvUrunler);
             tabPage1.Controls.Add(btnUrunEkle);
             tabPage1.Controls.Add(btnUrunSil);
@@ -179,7 +201,7 @@
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1299, 822);
+            tabPage1.Size = new Size(1793, 822);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Ürün Yönetimi";
             tabPage1.UseVisualStyleBackColor = true;
@@ -192,7 +214,7 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1299, 822);
+            tabPage2.Size = new Size(1793, 822);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Kullanıcı Yönetimi";
             tabPage2.UseVisualStyleBackColor = true;
@@ -205,7 +227,7 @@
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1299, 822);
+            tabPage3.Size = new Size(1793, 822);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Raporlar";
             tabPage3.UseVisualStyleBackColor = true;
@@ -214,15 +236,17 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1307, 924);
+            ClientSize = new Size(1801, 837);
             Controls.Add(tabControl1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "YoneticiFormu";
             Text = "YoneticiFormu";
-            ((System.ComponentModel.ISupportInitialize)dgvCalisanlar).EndInit();
+            Load += YoneticiFormu_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUrunler).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCalisanlar).EndInit();
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
             ResumeLayout(false);
@@ -244,5 +268,7 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabPage tabPage3;
+        private Button btnArama;
+        private TextBox txtArama;
     }
 }
