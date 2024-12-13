@@ -23,16 +23,7 @@ namespace RestoranTakip
             KullanicilariYenidenYukle();
             UrunleriYenidenYukle(); // Mevcut ürünleri yüklemek için
          
-
         }
-
-
-
-
-
-
-
-
 
         private void btnCalisanSil_Click(object sender, EventArgs e)
         {
@@ -100,7 +91,6 @@ namespace RestoranTakip
                 MessageBox.Show($"Bir hata oluştu: {ex.Message}");
             }
         }
-
 
         private void btnCalisanEkle_Click(object sender, EventArgs e)
         {
@@ -183,8 +173,6 @@ namespace RestoranTakip
                 MessageBox.Show($"Bir hata oluştu: {ex.Message}");
             }
         }
-
-
 
         private void btnArama_Click(object sender, EventArgs e)
         {

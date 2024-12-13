@@ -123,7 +123,7 @@ namespace RestoranTakip
 
         private void btnIptal_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

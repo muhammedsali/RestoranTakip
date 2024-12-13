@@ -135,7 +135,6 @@
         #endregion
         private TextBox txtSifre;
         private TextBox txtKullaniciAdi;
-        private Button btnGiris;
         private LinkLabel linkKayit;
         private Button button1;
     }

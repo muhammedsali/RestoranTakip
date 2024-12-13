@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient; // System.Data.SqlClient yerine Microsoft.Data.SqlClient kullanın
+using Microsoft.Data.SqlClient;
 
 
 namespace RestoranTakip
@@ -15,15 +15,12 @@ namespace RestoranTakip
     public partial class Form2 : Form
     {
 
-        // Yeni bağlantı dizesi
         private string connectionString = "Data Source=DESKTOP-4U1EH3V\\SQLEXPRESS;Initial Catalog=RestoranDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
-
-
 
         public Form2()
         {
             InitializeComponent();
-            
+
         }
 
         private void Form2_Load(object sender, EventArgs e)

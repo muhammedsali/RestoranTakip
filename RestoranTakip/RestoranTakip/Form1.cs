@@ -83,11 +83,11 @@ namespace RestoranTakip
 
         private void linkKayit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 form2 = new Form2(); // Mevcut Form1'i gönderiyoruz
-            form2.StartPosition = FormStartPosition.Manual; // Formun konumunu koru
-            form2.Location = this.Location; // Ayný konuma ayarla
+            Form2 form2 = new Form2(); 
+            form2.StartPosition = FormStartPosition.Manual; 
+            form2.Location = this.Location; 
             form2.Show();
-            this.Hide(); // Form1'i gizle
+            this.Hide();
         }
 
 
