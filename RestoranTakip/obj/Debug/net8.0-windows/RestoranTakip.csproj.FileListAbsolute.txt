@@ -1,0 +1,183 @@
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.exe
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.deps.json
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.runtimeconfig.json
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.pdb
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Form1.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.GenerateResource.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.AssemblyInfoInputs.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.AssemblyInfo.cs
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.CoreCompileInputs.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.sourcelink.json
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\refint\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.pdb
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.genruntimeconfig.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\ref\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Form2.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.AssemblyReference.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\Restoran.FFF4EF94.Up2Date
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.MusteriFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.YoneticiFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.UrunEkleFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanEkleFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Properties.Resources.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.exe
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.deps.json
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.runtimeconfig.json
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.pdb
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.AssemblyReference.cache
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanEkleFormu.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanFormu.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Form1.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Form2.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.MusteriFormu.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Properties.Resources.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.SepetFormu.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.SiparislerFormu.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.UrunEkleFormu.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.YoneticiFormu.resources
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.GenerateResource.cache
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.AssemblyInfoInputs.cache
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.AssemblyInfo.cs
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.CoreCompileInputs.cache
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\Restoran.FFF4EF94.Up2Date
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\refint\RestoranTakip.dll
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.pdb
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.genruntimeconfig.cache
+C:\Users\muham\Desktop\Yeni klasör (2)\m\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\ref\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.exe
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.deps.json
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.runtimeconfig.json
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\RestoranTakip.pdb
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.AssemblyReference.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanEkleFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.CalisanFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Form1.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Form2.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.MusteriFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.SepetFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.SiparislerFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.UrunEkleFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.YoneticiFormu.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.Properties.Resources.resources
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.GenerateResource.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.AssemblyInfoInputs.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.AssemblyInfo.cs
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.csproj.CoreCompileInputs.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.sourcelink.json
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\Restoran.FFF4EF94.Up2Date
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\refint\RestoranTakip.dll
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.pdb
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\RestoranTakip.genruntimeconfig.cache
+C:\Users\muham\Projeler\c# Projeler\RestoranTakip\RestoranTakip\obj\Debug\net8.0-windows\ref\RestoranTakip.dll
