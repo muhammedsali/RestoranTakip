@@ -56,6 +56,7 @@
             flpUrunler.Name = "flpUrunler";
             flpUrunler.Size = new Size(1215, 250);
             flpUrunler.TabIndex = 11;
+            flpUrunler.Paint += flpUrunler_Paint;
             // 
             // Sepet
             // 

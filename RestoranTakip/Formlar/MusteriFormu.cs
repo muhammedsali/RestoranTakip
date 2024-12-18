@@ -11,6 +11,8 @@ namespace RestoranTakip
     public partial class MusteriFormu : Form
     {
         private string connectionString = "Data Source=DESKTOP-4U1EH3V\\SQLEXPRESS;Initial Catalog=RestoranDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+
+
         private DataTable sepetTablosu;
 
         public MusteriFormu()
@@ -20,7 +22,7 @@ namespace RestoranTakip
             SepetiOlustur();
         }
 
-        private void MusteriFormu_Load(object sender, EventArgs e)
+        private void MusteriFormu_Load()
         {
             flpUrunler.Controls.Clear();
             flpUrunler1.Controls.Clear();
@@ -33,15 +35,13 @@ namespace RestoranTakip
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
+
+
                 foreach (DataRow row in dt.Rows)
                 {
                     string kategori = row["Kategori"].ToString();
-                    string dosyaYolu = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resimler", row["ResimYolu"].ToString());
+                    string dosyaYolu = Path.Combine(Application.StartupPath, row["ResimYolu"].ToString());
 
-                    if (!File.Exists(dosyaYolu))
-                    {
-                        dosyaYolu = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resimler", "deneme.jpg");
-                    }
 
                     Panel urunPanel = new Panel
                     {
@@ -52,9 +52,10 @@ namespace RestoranTakip
                     PictureBox pb = new PictureBox
                     {
                         Size = new Size(140, 160),
-                        Image = Image.FromFile(dosyaYolu),
+                        ImageLocation = row["ResimYolu"].ToString(),
                         SizeMode = PictureBoxSizeMode.StretchImage
                     };
+                    pb.ImageLocation = dosyaYolu;
 
                     Label lblAd = new Label
                     {
@@ -62,7 +63,8 @@ namespace RestoranTakip
                         AutoSize = false,
                         TextAlign = ContentAlignment.MiddleCenter,
                         Dock = DockStyle.Bottom,
-                        Height = 20
+                        Height = 20,
+
                     };
 
                     Button btnEkle = new Button
@@ -72,6 +74,7 @@ namespace RestoranTakip
                         Margin = new Padding(0, 0, 15, 0),
                         Tag = row,
                         Height = 30
+
                     };
 
                     btnEkle.Click += (s, e) => SepeteEkle(row);
@@ -95,9 +98,6 @@ namespace RestoranTakip
                 }
             }
         }
-
-
-
 
         private void SepetiOlustur()
         {
@@ -136,6 +136,20 @@ namespace RestoranTakip
             }
 
         }
+        /* private void btnUrunEkle_Click(object sender, EventArgs e)
+        {
+            if (urunlerGridView.SelectedRows.Count > 0)
+            {
+                var selectedRow = urunlerGridView.SelectedRows[0];
+
+                string urunAdi = selectedRow.Cells["UrunAdi"].Value.ToString();
+                decimal fiyat = Convert.ToDecimal(selectedRow.Cells["Fiyat"].Value);
+                int urunID = Convert.ToInt32(selectedRow.Cells["UrunID"].Value);
+
+                sepetTablosu.Rows.Add(urunAdi, fiyat, 1, null, urunID);
+                MessageBox.Show("Ürün sepete eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }*/
 
 
         private void btnSiparisiOnayla_Click(object sender, EventArgs e)
@@ -202,12 +216,18 @@ namespace RestoranTakip
             sepetFormu.ShowDialog();
         }
 
+
+
+
+
+        private void flpUrunler_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void MusteriFormu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
-
-
     }
 }
