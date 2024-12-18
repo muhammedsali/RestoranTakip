@@ -21,7 +21,7 @@ namespace RestoranTakip
         {
             InitializeComponent();
             KullanicilariYenidenYukle();
-            UrunleriYenidenYukle(); // Mevcut ürünleri yüklemek için
+            UrunleriYenidenYukle();
 
         }
 
@@ -38,13 +38,11 @@ namespace RestoranTakip
                         SqlTransaction transaction = connection.BeginTransaction();
                         try
                         {
-                            // Önce ilgili tablolardaki kayıtları sil
                             string deleteSiparislerQuery = "DELETE FROM Siparisler WHERE KullaniciID = @KullaniciID";
                             SqlCommand siparislerCommand = new SqlCommand(deleteSiparislerQuery, connection, transaction);
                             siparislerCommand.Parameters.AddWithValue("@KullaniciID", kullaniciID);
                             siparislerCommand.ExecuteNonQuery();
 
-                            // Ardından kullanıcıyı sil
                             string deleteKullaniciQuery = "DELETE FROM Kullanicilar WHERE KullaniciID = @KullaniciID";
                             SqlCommand kullaniciCommand = new SqlCommand(deleteKullaniciQuery, connection, transaction);
                             kullaniciCommand.Parameters.AddWithValue("@KullaniciID", kullaniciID);
@@ -52,7 +50,7 @@ namespace RestoranTakip
 
                             transaction.Commit();
                             MessageBox.Show("Çalışan başarıyla silindi.");
-                            KullanicilariYenidenYukle(); // Kullanıcı listesi güncelleniyor
+                            KullanicilariYenidenYukle();
                         }
                         catch (Exception ex)
                         {
@@ -101,7 +99,7 @@ namespace RestoranTakip
 
         private void CalisanEkleFormu_CalisanEklendi(object? sender, EventArgs e)
         {
-            KullanicilariYenidenYukle(); // Yeni çalışan eklendikten sonra çalışanları yeniden yükleyin
+            KullanicilariYenidenYukle(); 
         }
 
 
@@ -113,7 +111,6 @@ namespace RestoranTakip
             // DataBindingComplete olayını ekleyin
             this.dgvUrunler.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(this.dgvUrunler_DataBindingComplete);
 
-            // Ürünleri yükleyin
             UrunleriYenidenYukle();
         }
 
@@ -129,11 +126,10 @@ namespace RestoranTakip
 
             foreach (DataGridViewRow row in dgvUrunler.Rows)
             {
-                row.Height = 125; // Satır yüksekliğini ayarlayın
+                row.Height = 125;
                 row.Cells["Resim"].Value = Image.FromFile(bosResimYolu);
             }
 
-            // DataGridView hücre stillerini ayarlayın
             DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
             cellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             cellStyle.NullValue = null;
@@ -156,14 +152,13 @@ namespace RestoranTakip
 
                     dgvUrunler.DataSource = dt;
 
-                    // DataGridView'de resimleri göstermek için sütun ekleyin
                     if (!dgvUrunler.Columns.Contains("Resim"))
                     {
                         DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
                         imageColumn.HeaderText = "Ürün Resmi";
                         imageColumn.Name = "Resim";
-                        imageColumn.Width = 125; // Sütun genişliğini ayarlayın
-                        imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // Resimlerin sığmasını sağlayın
+                        imageColumn.Width = 125; 
+                        imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; 
                         dgvUrunler.Columns.Add(imageColumn);
                     }
                 }
@@ -195,7 +190,7 @@ namespace RestoranTakip
             }
             else
             {
-                UrunleriYenidenYukle(); // Arama metni boşsa tüm ürünleri yükle
+                UrunleriYenidenYukle();
             }
         }
 
@@ -222,13 +217,13 @@ namespace RestoranTakip
             }
             else
             {
-                UrunleriYenidenYukle(); // Arama metni boşsa tüm ürünleri yükle
+                UrunleriYenidenYukle();
             }
         }
 
         private void UrunEkleFormu_UrunEklendi(object sender, EventArgs e)
         {
-            UrunleriYenidenYukle(); // Yeni ürün eklendikten sonra ürünleri yeniden yükleyin
+            UrunleriYenidenYukle();
         }
 
 
@@ -252,13 +247,11 @@ namespace RestoranTakip
                         SqlTransaction transaction = connection.BeginTransaction();
                         try
                         {
-                            // Önce ilgili SiparisUrunler kayıtlarını sil
                             string deleteSiparisUrunlerQuery = "DELETE FROM SiparisUrunler WHERE UrunID = @UrunID";
                             SqlCommand siparisUrunlerCommand = new SqlCommand(deleteSiparisUrunlerQuery, connection, transaction);
                             siparisUrunlerCommand.Parameters.AddWithValue("@UrunID", urunID);
                             siparisUrunlerCommand.ExecuteNonQuery();
 
-                            // Ardından ürünü sil
                             string deleteUrunQuery = "DELETE FROM Urunler WHERE UrunID = @UrunID";
                             SqlCommand urunCommand = new SqlCommand(deleteUrunQuery, connection, transaction);
                             urunCommand.Parameters.AddWithValue("@UrunID", urunID);
@@ -266,7 +259,7 @@ namespace RestoranTakip
 
                             transaction.Commit();
                             MessageBox.Show("Ürün başarıyla silindi.");
-                            UrunleriYenidenYukle(); // Ürün listesi güncelleniyor
+                            UrunleriYenidenYukle();
                         }
                         catch (Exception ex)
                         {
@@ -356,7 +349,6 @@ namespace RestoranTakip
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                // Raporu göstermek için yeni bir form oluşturulabilir veya mevcut formda DataGridView kullanılabilir
                 DataGridView raporGoruntuleme = new DataGridView();
                 raporGoruntuleme.DataSource = dt;
                 raporGoruntuleme.Dock = DockStyle.Fill;
@@ -401,7 +393,6 @@ namespace RestoranTakip
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                // Raporu göstermek için yeni bir form oluşturulabilir veya mevcut formda DataGridView kullanılabilir
                 DataGridView raporGoruntuleme = new DataGridView();
                 raporGoruntuleme.DataSource = dt;
                 raporGoruntuleme.Dock = DockStyle.Fill;

@@ -20,7 +20,7 @@ namespace RestoranTakip
             SepetiOlustur();
         }
 
-        private void MusteriFormu_Load()
+        private void MusteriFormu_Load(object sender, EventArgs e)
         {
             flpUrunler.Controls.Clear();
             flpUrunler1.Controls.Clear();
@@ -33,13 +33,15 @@ namespace RestoranTakip
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-
-
                 foreach (DataRow row in dt.Rows)
                 {
                     string kategori = row["Kategori"].ToString();
-                    string dosyaYolu = Path.Combine(Application.StartupPath, row["ResimYolu"].ToString());
+                    string dosyaYolu = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resimler", row["ResimYolu"].ToString());
 
+                    if (!File.Exists(dosyaYolu))
+                    {
+                        dosyaYolu = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resimler", "deneme.jpg");
+                    }
 
                     Panel urunPanel = new Panel
                     {
@@ -50,10 +52,9 @@ namespace RestoranTakip
                     PictureBox pb = new PictureBox
                     {
                         Size = new Size(140, 160),
-                        ImageLocation = row["ResimYolu"].ToString(),
+                        Image = Image.FromFile(dosyaYolu),
                         SizeMode = PictureBoxSizeMode.StretchImage
                     };
-                    pb.ImageLocation = dosyaYolu;
 
                     Label lblAd = new Label
                     {
@@ -61,8 +62,7 @@ namespace RestoranTakip
                         AutoSize = false,
                         TextAlign = ContentAlignment.MiddleCenter,
                         Dock = DockStyle.Bottom,
-                        Height = 20,
-
+                        Height = 20
                     };
 
                     Button btnEkle = new Button
@@ -72,7 +72,6 @@ namespace RestoranTakip
                         Margin = new Padding(0, 0, 15, 0),
                         Tag = row,
                         Height = 30
-
                     };
 
                     btnEkle.Click += (s, e) => SepeteEkle(row);
@@ -85,7 +84,7 @@ namespace RestoranTakip
                     {
                         flpUrunler.Controls.Add(urunPanel);
                     }
-                    else if (kategori == "içecek")
+                    else if (kategori == "İçecek")
                     {
                         flpUrunler1.Controls.Add(urunPanel);
                     }
@@ -96,6 +95,9 @@ namespace RestoranTakip
                 }
             }
         }
+
+
+
 
         private void SepetiOlustur()
         {
@@ -204,5 +206,8 @@ namespace RestoranTakip
         {
             Application.Exit();
         }
+
+
+
     }
 }

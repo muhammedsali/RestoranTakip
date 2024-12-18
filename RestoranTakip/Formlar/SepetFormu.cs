@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace RestoranTakip
 {
@@ -29,10 +30,10 @@ namespace RestoranTakip
             sepetTablosu.Columns.Add("Fiyat", typeof(decimal));
             sepetTablosu.Columns.Add("Miktar", typeof(int));
             sepetTablosu.Columns.Add("Toplam", typeof(decimal), "Fiyat * Miktar");
-            sepetTablosu.Columns.Add("UrunID", typeof(int)); // Gizli sütun
+            sepetTablosu.Columns.Add("UrunID", typeof(int)); 
 
             dgvSepet.DataSource = sepetTablosu;
-            dgvSepet.Columns["UrunID"].Visible = false; // Kullanıcıya gösterilmesin
+            dgvSepet.Columns["UrunID"].Visible = false;
         }
         private void SepetToplaminiGuncelle()
         {
@@ -61,6 +62,10 @@ namespace RestoranTakip
             if (sepetTablosu.Rows.Count == 0)
             {
                 MessageBox.Show("Sepet boş. Sipariş oluşturulamıyor.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if(!odeme1.Checked && checkBox1.Checked) {
+                MessageBox.Show("Bir ödeme seçeneği seçin.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -111,5 +116,23 @@ namespace RestoranTakip
         {
 
         }
+
+        private void odeme1_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBox1.Checked = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            odeme1.Checked = false;
+        }
+
+
+
+
+
+
+
+
     }
 }

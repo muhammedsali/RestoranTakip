@@ -84,6 +84,7 @@
             odeme1.TabIndex = 5;
             odeme1.Text = "Posla Ödeme";
             odeme1.UseVisualStyleBackColor = true;
+            odeme1.CheckedChanged += odeme1_CheckedChanged;
             // 
             // checkBox1
             // 
@@ -94,6 +95,7 @@
             checkBox1.TabIndex = 6;
             checkBox1.Text = "Nakitle Odeme";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // label1
             // 
