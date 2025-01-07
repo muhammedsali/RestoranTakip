@@ -42,10 +42,9 @@
             btnGiris.BackColor = Color.FromArgb(255, 87, 87);
             btnGiris.BackgroundImageLayout = ImageLayout.None;
             btnGiris.FlatStyle = FlatStyle.Popup;
-            btnGiris.Location = new Point(71, 534);
-            btnGiris.Margin = new Padding(3, 4, 3, 4);
+            btnGiris.Location = new Point(62, 400);
             btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(274, 32);
+            btnGiris.Size = new Size(240, 25);
             btnGiris.TabIndex = 4;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = false;
@@ -56,11 +55,10 @@
             txtSifre.BackColor = Color.FromArgb(72, 74, 74);
             txtSifre.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
             txtSifre.ForeColor = Color.White;
-            txtSifre.Location = new Point(71, 472);
-            txtSifre.Margin = new Padding(3, 4, 3, 4);
+            txtSifre.Location = new Point(62, 354);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
-            txtSifre.Size = new Size(274, 31);
+            txtSifre.Size = new Size(240, 27);
             txtSifre.TabIndex = 3;
             // 
             // txtKullaniciAdi
@@ -68,10 +66,9 @@
             txtKullaniciAdi.BackColor = Color.FromArgb(72, 74, 74);
             txtKullaniciAdi.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
             txtKullaniciAdi.ForeColor = Color.Silver;
-            txtKullaniciAdi.Location = new Point(72, 400);
-            txtKullaniciAdi.Margin = new Padding(3, 4, 3, 4);
+            txtKullaniciAdi.Location = new Point(63, 300);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(274, 31);
+            txtKullaniciAdi.Size = new Size(240, 27);
             txtKullaniciAdi.TabIndex = 2;
             txtKullaniciAdi.Text = "Kullanıcı Adınız";
             txtKullaniciAdi.Enter += txtKullaniciAdi_Enter;
@@ -83,9 +80,9 @@
             linkKayit.BackColor = Color.Transparent;
             linkKayit.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
             linkKayit.LinkColor = Color.FromArgb(255, 87, 87);
-            linkKayit.Location = new Point(281, 593);
+            linkKayit.Location = new Point(246, 445);
             linkKayit.Name = "linkKayit";
-            linkKayit.Size = new Size(65, 25);
+            linkKayit.Size = new Size(53, 20);
             linkKayit.TabIndex = 5;
             linkKayit.TabStop = true;
             linkKayit.Text = "Üye Ol";
@@ -97,20 +94,21 @@
             button1.BackgroundImage = Properties.Resources.pngtree_red_cross_paint_clipart_transparent_background_vector_png_image_7110618;
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(359, 12);
+            button1.Location = new Point(314, 9);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(43, 39);
+            button1.Size = new Size(38, 29);
             button1.TabIndex = 1;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Login_Page_Mobile_Prototype1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(414, 763);
+            ClientSize = new Size(362, 572);
             Controls.Add(button1);
             Controls.Add(linkKayit);
             Controls.Add(btnGiris);
@@ -118,7 +116,6 @@
             Controls.Add(txtSifre);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";

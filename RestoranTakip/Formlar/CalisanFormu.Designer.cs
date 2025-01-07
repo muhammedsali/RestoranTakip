@@ -38,56 +38,56 @@
             // dgvSiparisler
             // 
             dgvSiparisler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSiparisler.Location = new Point(14, 45);
-            dgvSiparisler.Margin = new Padding(3, 4, 3, 4);
+            dgvSiparisler.Location = new Point(12, 34);
             dgvSiparisler.Name = "dgvSiparisler";
             dgvSiparisler.RowHeadersWidth = 51;
-            dgvSiparisler.Size = new Size(928, 462);
+            dgvSiparisler.Size = new Size(812, 346);
             dgvSiparisler.TabIndex = 0;
             // 
             // btnHazirlaniyor
             // 
-            btnHazirlaniyor.Location = new Point(14, 534);
-            btnHazirlaniyor.Margin = new Padding(3, 4, 3, 4);
+            btnHazirlaniyor.BackColor = Color.Gold;
+            btnHazirlaniyor.Location = new Point(12, 400);
             btnHazirlaniyor.Name = "btnHazirlaniyor";
-            btnHazirlaniyor.Size = new Size(113, 31);
+            btnHazirlaniyor.Size = new Size(99, 23);
             btnHazirlaniyor.TabIndex = 1;
             btnHazirlaniyor.Text = "Hazırlanıyor";
-            btnHazirlaniyor.UseVisualStyleBackColor = true;
+            btnHazirlaniyor.UseVisualStyleBackColor = false;
             btnHazirlaniyor.Click += btnHazirlaniyor_Click;
             // 
             // btnYolda
             // 
-            btnYolda.Location = new Point(184, 534);
-            btnYolda.Margin = new Padding(3, 4, 3, 4);
+            btnYolda.BackColor = Color.Coral;
+            btnYolda.Location = new Point(161, 400);
             btnYolda.Name = "btnYolda";
-            btnYolda.Size = new Size(113, 31);
+            btnYolda.Size = new Size(99, 23);
             btnYolda.TabIndex = 1;
             btnYolda.Text = "Yolda";
-            btnYolda.UseVisualStyleBackColor = true;
+            btnYolda.UseVisualStyleBackColor = false;
             btnYolda.Click += btnYolda_Click;
             // 
             // btnTeslimEdildi
             // 
-            btnTeslimEdildi.Location = new Point(342, 534);
-            btnTeslimEdildi.Margin = new Padding(3, 4, 3, 4);
+            btnTeslimEdildi.BackColor = Color.Firebrick;
+            btnTeslimEdildi.ForeColor = SystemColors.ButtonFace;
+            btnTeslimEdildi.Location = new Point(299, 400);
             btnTeslimEdildi.Name = "btnTeslimEdildi";
-            btnTeslimEdildi.Size = new Size(113, 31);
+            btnTeslimEdildi.Size = new Size(99, 23);
             btnTeslimEdildi.TabIndex = 1;
             btnTeslimEdildi.Text = "Teslim Edildi";
-            btnTeslimEdildi.UseVisualStyleBackColor = true;
+            btnTeslimEdildi.UseVisualStyleBackColor = false;
             btnTeslimEdildi.Click += btnTeslimEdildi_Click;
             // 
             // CalisanFormu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1126, 600);
+            BackColor = Color.LightCoral;
+            ClientSize = new Size(985, 450);
             Controls.Add(btnTeslimEdildi);
             Controls.Add(btnYolda);
             Controls.Add(btnHazirlaniyor);
             Controls.Add(dgvSiparisler);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "CalisanFormu";
             Text = "CalisanFormu";
             FormClosing += CalisanFormu_FormClosing;
